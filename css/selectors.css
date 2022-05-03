@@ -1,0 +1,59 @@
+/* По тегу. Вес 1 */
+p {
+  color: red;
+}
+
+/* По атрибуту. Вес - 10 */
+[translate="no"] {
+  color: blue;
+}
+
+/* По id. Вес - 100 */
+#bwn {
+  color: brown;
+}
+
+/* По классу. Вес - 10 */
+.class {
+  color: gray;
+}
+
+/* Неск классов. Вес - 20 */
+.font.back {
+  font-size: 20px;
+  font-style: italic;
+  background-color: blue;
+  color: yellow;
+}
+
+/* Тег/Класс/id. Вес - 111*/
+p#few.cti {
+  color: green;
+}
+
+/* Тег/Класс/Атрибут. Вес - 21 */
+p.tca[id="few1"] {
+  background-color: yellowgreen;
+  color: black;
+}
+
+/* Вложенность1. Вес - 2 */
+div li {
+  color: aqua;
+  background-color: darkorchid;
+}
+
+/* Вложенность2. Вес - 12 */
+div + p[class="background-color2"] {
+  color: darkblue;
+  background-color: yellow;
+}
+.background-color2 {
+  background-color: yellow;
+}
+
+/* Вложенность3. Вес - 12 */
+div ~ p[class="background-color3"] {
+  color: white;
+  background-color: darkgreen;
+}
